@@ -1,5 +1,5 @@
 var canvas=new fabric.Canvas("myc");
-ctx=Canvas.getContext("2d")
+ctx=canvas.getContext("2d")
 
  block_y=1;
  block_x=1;
