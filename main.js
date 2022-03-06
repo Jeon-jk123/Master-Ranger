@@ -1,5 +1,5 @@
-var canvas=document.getElementById("myc");
-ctx.getContext("2d")
+var canvas=new fabric.Canvas("myc");
+ctx=Canvas.getContext("2d")
 
  block_y=1;
  block_x=1;
@@ -32,31 +32,31 @@ keyPressed = e.keyCode;
 console.log(keyPressed);
 
 	if(keyPressed == '82')
-	{
+	{window.addEventListener("keydown", my_keydown);
 		new_image("rr1.png");
 		console.log("r");
 	}
 	if(keyPressed == '71')
-	{
+	{window.addEventListener("keydown", my_keydown);
 		block_x = 200;
 		new_image("gr.png");
 		console.log("g");
 	}
 	
 	if(keyPressed == '89')
-	{
+	{window.addEventListener("keydown", my_keydown);
 		block_x =350;
 		new_image("yr.png");
 		console.log("y");
 	}
 	if(keyPressed == '80')
-	{
+	{window.addEventListener("keydown", my_keydown);
 		block_x = 600;
 		new_image("pr.png");
 		console.log("p");
 	}
 	if(keyPressed == '66')
-	{
+	{window.addEventListener("keydown", my_keydown);
 		block_x = 700;
 		new_image("br.png");
 		console.log("b");
